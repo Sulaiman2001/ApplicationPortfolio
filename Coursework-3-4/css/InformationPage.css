@@ -1,0 +1,162 @@
+* {box-sizing: border-box;}
+body {
+  font-family: Arial;
+  background-color:#c3bec4;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+body{
+  margin:0
+
+}
+.content {
+  max-width: 50%;
+  margin: auto;
+  background: white;
+  padding: 10px;
+
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  width:100%;
+  height:100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* slide number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dot for each slide */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+.column {
+flex: 100%;
+padding: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+font-family: arial;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .content {
+    width: 100%;
+    padding: 0;
+    float: left;
+    max-width: 100%;
+  }
+}
+#myBtn{
+  color: white;
+  padding:10px 20px;
+  background-color: purple;
+  font-size:18px;
+  font-weight:1000;
+  font-family: Arial;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #9a2ebf;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

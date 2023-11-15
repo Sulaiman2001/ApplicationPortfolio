@@ -1,0 +1,60 @@
+*{
+  padding:0px;
+  margin:px;
+}
+body{
+  font-family: Arial;
+  background-image: url("https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1349,h_831/https://www.seatssoftware.com/wp-content/uploads/2020/12/Aston-uni-campus-80.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+.SignUp{
+  border-radius: 25px;
+  border:7px solid #9a2ebf;
+  padding: 20px;
+  width:400px;
+  height:700px;
+  background-color:white;
+  color:#9a2ebf;
+  font-family:Arial;
+  float: center;
+}
+h1{
+  padding-top: 50px;
+  font-size: 15px;
+  color:black;
+  font-weight: normal;
+}
+hr{
+  padding-top: 50px;
+}
+hr{
+  color:#9a2ebf;
+}
+input[type="text"]{
+  padding: 20px 60px;
+  color:#9a2ebf;
+  border:2px solid #9a2ebf;
+  margin-top: 10px;
+  font-weight:600;
+}
+input[type="password"]{
+  padding: 20px 60px;
+  color:#9a2ebf;
+  border:2px solid #9a2ebf;
+  margin-top: 10px;
+  font-weight:600;
+}
+input[type="submit"]{
+  color: white;
+  padding:10px 20px;
+  background-color: black;
+  font-size:18px;
+  font-weight:1000;
+  font-family: Arial;
+  border-radius: 10px;
+  margin-top: 20px;
+}
