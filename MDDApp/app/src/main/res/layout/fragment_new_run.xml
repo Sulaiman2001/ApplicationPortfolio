@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.newRun.NewRunFragment"
+    android:orientation="vertical"
+    android:layout_marginBottom="60dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2">
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange"
+            app:borderWidth="0dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/orange"
+            android:clickable="true"
+            android:src="@android:drawable/alert_light_frame"
+            app:borderWidth="0dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="29dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="29dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/distanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: "
+            android:textSize="29dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/distanceCovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="29dp"
+            android:text="0.00 km"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/paceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pace: "
+            android:textSize="29dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/averagePace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="29dp"
+            android:text="00.00 km/h"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
